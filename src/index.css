@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 :root {
   --main-text-color: #212121;
@@ -6,6 +6,8 @@
   --border-color: #cacaca;
   --avatar-bcg-color: rgba(135, 207, 235, 0.2);
   --section-bcg-color: rgba(128, 128, 128, 0.1);
+  --online-color: green;
+  --offline-color: red;
 }
 
 * {

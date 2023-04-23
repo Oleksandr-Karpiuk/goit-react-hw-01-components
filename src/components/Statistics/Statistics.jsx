@@ -7,16 +7,18 @@ export const Statistics = ({ title, stats }) => {
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statlist}>
-        {stats.map(list => (
-          <li
-            className={css.item}
-            key={list.id}
-            style={{ backgroundColor: `${getRandomHexColor()}` }}
-          >
-            <span className={css.label}>{list.label}</span>
-            <span className={css.percentage}>{list.percentage}%</span>
-          </li>
-        ))}
+        {stats.map(list => {
+          return (
+            <li
+              className={css.item}
+              key={list.id}
+              style={{ backgroundColor: `${getRandomHexColor()}` }}
+            >
+              <span className={css.label}>{list.label}</span>
+              <span className={css.percentage}>{list.percentage}%</span>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

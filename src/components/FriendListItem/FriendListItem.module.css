@@ -1,0 +1,40 @@
+.item {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 70%;
+
+  background-color: var(--avatar-bcg-color);
+
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.true {
+  background-color: var(--online-color);
+}
+
+.false {
+  background-color: var(--offline-color);
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
